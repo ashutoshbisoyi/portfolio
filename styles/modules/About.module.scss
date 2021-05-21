@@ -1,0 +1,35 @@
+@import '../variables';
+.main {
+  background-color: $ui-background;
+  @apply py-0;
+}
+.imageContainer {
+  @apply inline-flex items-end h-full;
+  width: 350px;
+  background-color: #cbc7c5;
+}
+.content {
+  @apply py-10 order-1;
+  p {
+    @apply text-base my-5;
+    color: $black-fade-md;
+  }
+}
+.socialmedia {
+  @apply flex;
+  li {
+    height: 35px;
+    width: 35px;
+    background-color: #cbc7c5;
+    @apply inline-flex justify-center items-center rounded-full mr-6;
+  }
+}
+.icon {
+  color: #2e353a;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .imageContainer {
+    width: 100%;
+  }
+}

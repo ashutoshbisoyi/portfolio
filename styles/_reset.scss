@@ -1,0 +1,32 @@
+@import './_variables';
+
+* {
+  @apply m-0 p-0 box-border text-lg;
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+html {
+  background: $background;
+  overflow-x: hidden;
+}
+section {
+  @apply w-full px-6 py-5 md:px-40 md:py-12 md:grid md:grid-cols-2;
+}
+h1 {
+  color: $black-fade-sm;
+  @apply text-4xl md:text-6xl my-2;
+}
+h2 {
+  color: $black-fade-sm;
+  @apply text-3xl md:text-4xl my-2;
+}
+p {
+  @apply text-base md:text-lg;
+}
+button {
+  background: $primary-color;
+  color: $background;
+  @apply relative z-10 px-4 py-2 inline-flex justify-center items-center my-4 outline-none border-transparent text-base;
+  filter: drop-shadow(-6px 6px 8px rgba(100, 55, 226, 0.25));
+}

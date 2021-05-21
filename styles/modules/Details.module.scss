@@ -1,0 +1,105 @@
+@import '../variables';
+.main {
+  @apply py-0;
+}
+.content {
+  @apply pt-16 md:pt-32;
+  p {
+    @apply my-3;
+    color: $black-fade-md;
+    width: 80%;
+  }
+  button {
+    @apply rounded-sm py-3 px-5 mb-8;
+  }
+}
+.btnContainer {
+  @apply relative;
+  &::before {
+    content: '';
+    height: 80px;
+    width: 80px;
+    border: 1px solid #c4c4c4;
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+  }
+}
+.figure {
+  @apply md:grid md:grid-cols-12 relative py-16;
+}
+.firstCol {
+  @apply col-span-5 inline-flex items-center;
+}
+.secondCol {
+  @apply col-span-5;
+}
+.spaceCol {
+  @apply col-span-1;
+}
+.developCard,
+.designCard,
+.seoCard {
+  @apply relative px-3 py-6 rounded-lg pb-28 mb-4 shadow-lg;
+  color: $ui-background;
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold mb-2;
+  }
+  p {
+    @apply text-sm md:text-base;
+  }
+}
+.developCard {
+  background-color: $primary-color;
+  @apply pb-36;
+}
+.designCard {
+  background-color: $hot-pink;
+  @apply md:transform -translate-x-6;
+}
+.seoCard {
+  background-color: $cool-green;
+}
+.cardImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.design {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-image: url('../../public/ui-elements/doodle-group.svg');
+  background-size: cover;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .content {
+    p {
+      width: 100%;
+    }
+  }
+  .btnContainer {
+    @apply relative;
+    &::before {
+      opacity: 0;
+    }
+  }
+  .developCard,
+  .designCard,
+  .seoCard {
+    width: 75%;
+    p {
+      padding-right: 1em;
+    }
+  }
+  .designCard {
+    margin-left: auto;
+  }
+  .design {
+    width: 600px;
+    right: -100px;
+  }
+}
