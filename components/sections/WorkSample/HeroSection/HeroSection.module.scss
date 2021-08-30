@@ -1,0 +1,20 @@
+@import '../../../../styles/variables';
+.hero {
+  background-color: $ui-background;
+  @apply pb-5 relative overflow-hidden;
+  .content {
+    @apply flex justify-center items-center text-center py-5 mb-5;
+    h1 {
+      @apply text-4xl;
+    }
+    p {
+      @apply text-base mb-4;
+    }
+  }
+  .imageContainer {
+    @apply absolute invisible md:visible;
+    right: 0;
+    bottom: -80px;
+    transform: rotate(-15deg);
+  }
+}

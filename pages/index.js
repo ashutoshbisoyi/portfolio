@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import HeroSection from '../components/sections/Home/HeroSection';
-import About from '../components/sections/Home/About';
+import HeroSection from '../components/sections/Home/HeroSection/HeroSection';
+import About from '../components/sections/Home/about/About';
 import Details from '../components/sections/Home/Details';
-import Statistics from '../components/sections/Home/Statistics';
-import WorkSample from '../components/sections/Home/WorkSample';
-import Testimonial from '../components/sections/Home/Testimonial';
+import Statistics from '../components/sections/Home/statistics/Statistics';
+import WorkSample from '../components/sections/Home/worksample/WorkSample';
+import Testimonial from '../components/sections/Home/testimonial/Testimonial';
 import Connect from '../components/sections/Home/Connect';
 export default function Home() {
   return (
@@ -19,7 +19,6 @@ export default function Home() {
           name='description'
           content='Ashutosh Bisoyi - Frontend developer portfolio'
         />
-
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
@@ -31,7 +30,6 @@ export default function Home() {
         <Testimonial />
         <Connect />
       </main>
-      {/* <footer>footer</footer> */}
     </div>
   );
 }

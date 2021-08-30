@@ -1,0 +1,108 @@
+@import '../../../../styles/variables';
+
+.content {
+  @apply h-full text-center md:text-left pt-8 md:pt-20;
+  h1 {
+    @apply mb-4;
+  }
+}
+.figure {
+  @apply flex justify-center items-center;
+  height: 500px;
+  background-image: url('../../../../public//ui-elements/bolb.png');
+  background-size: 100% 100%;
+}
+.image {
+  @apply relative;
+  width: 500px;
+  height: 350px;
+  background-image: url('../../../../public/ui-elements/screen.png');
+  background-size: 100% 100%;
+}
+.rocketIllustration {
+  @apply rounded-full shadow-2xl absolute z-10;
+  height: 120px;
+  width: 120px;
+  background-color: $ui-background;
+  bottom: -30px;
+  right: -30px;
+}
+.rocket {
+  transform: rotate(-10deg);
+}
+.reactIllustration,
+.sassIllustration,
+.materialIllustration {
+  @apply rounded-2xl bg-white z-10 absolute inline-flex justify-center items-center shadow-md;
+  height: 80px;
+  width: 80px;
+}
+.reactIllustration {
+  bottom: 30px;
+  left: -30px;
+  transform: rotate(-30deg);
+}
+.sassIllustration {
+  top: -70px;
+  left: 150px;
+  transform: rotate(15deg);
+}
+.materialIllustration {
+  top: 100px;
+  right: -50px;
+  transform: rotate(-15deg);
+}
+.reactIcon,
+.sassIcon,
+.materialIcon {
+  transform: scale(2) rotate(0);
+}
+.reactIcon {
+  color: #5ed4f3;
+}
+.sassIcon {
+  color: #c66394;
+}
+.materialIcon {
+  color: #007dc5;
+  transform: scale(2) rotate(15deg);
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .figure {
+    @apply my-10;
+    height: 300px;
+  }
+  .image {
+    width: 300px;
+    height: 230px;
+  }
+  .rocketIllustration {
+    height: 80px;
+    width: 80px;
+    bottom: -10px;
+    right: -10px;
+  }
+  .reactIllustration,
+  .sassIllustration,
+  .materialIllustration {
+    height: 50px;
+    width: 50px;
+  }
+  .reactIllustration {
+    left: -20px;
+  }
+  .sassIllustration {
+    top: -40px;
+    left: 150px;
+  }
+  .materialIllustration {
+    top: 70px;
+    right: -30px;
+  }
+  .reactIcon,
+  .sassIcon,
+  .materialIcon {
+    transform: scale(1.5);
+  }
+}

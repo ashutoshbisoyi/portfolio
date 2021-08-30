@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+.navbar {
+  @apply w-full flex justify-between items-center px-6 py-5 md:px-40 md:py-10;
+  ul {
+    @apply flex items-center;
+    li {
+      @apply mx-2 md:mx-5 inline-flex items-center cursor-pointer;
+      color: $black-fade-md;
+      border-bottom: 3px solid transparent;
+      &:last-child {
+        @apply mr-0;
+      }
+    }
+  }
+}
+.leftList {
+  @apply flex justify-between w-full md:w-min;
+  li {
+    transition: all 1s ease-in-out;
+    &:hover {
+      border-bottom: 3px solid #c66394;
+    }
+  }
+}
+
+.rightList {
+  @apply hidden md:flex #{!important};
+}
+
+.main {
+  color: $black-fade-sm;
+}
+.logo {
+  &:hover {
+    @apply shadow-lg cursor-pointer;
+  }
+}
+.logo,
+.mail {
+  height: 40px;
+  width: 40px;
+  background-color: $black;
+  @apply inline-flex justify-center items-center rounded-full;
+}
+.mail {
+  transition: all 0.5s ease-in-out;
+  background-color: $primary-bg;
+  &:hover {
+    @apply shadow-md cursor-pointer;
+  }
+}
+.icon {
+  color: $black;
+  @apply mx-1;
+}

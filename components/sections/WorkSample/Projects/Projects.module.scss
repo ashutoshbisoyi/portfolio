@@ -1,0 +1,21 @@
+@import '../../../../styles/variables';
+.cardContainer {
+  @apply md:grid md:grid-cols-3 gap-4;
+}
+.topbar {
+  @apply flex justify-between items-center;
+  .filters {
+    @apply flex mb-5;
+    button {
+      @apply py-1 text-base mr-3 rounded bg-gray-400;
+      filter: none;
+      &.selected {
+        background: $primary-color;
+        color: $background;
+      }
+    }
+  }
+  .status {
+    @apply text-gray-500;
+  }
+}

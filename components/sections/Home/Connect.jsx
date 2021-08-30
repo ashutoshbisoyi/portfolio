@@ -32,21 +32,36 @@ const Connect = () => {
           <p>
             I am excited to discuss your next project and develope your idea.
           </p>
-          <button>Hire Me!</button>
-          <button>Freelance Work!</button>
+          <a href='mailto:ashutoshbisoyi205@gmail.com' target='_blank'>
+            <button>Hire Me!</button>
+          </a>
+          <a href='mailto:ashutoshbisoyi205@gmail.com' target='_blank'>
+            <button>Freelance Work!</button>
+          </a>
           <ul className={styles.socialmedia}>
-            <li>
-              <AiFillLinkedin className={styles.icon} />
-            </li>
-            <li>
-              <AiFillGithub className={styles.icon} />
-            </li>
-            <li>
-              <AiFillMail className={styles.icon} />
-            </li>
-            <li>
-              <AiFillInstagram className={styles.icon} />
-            </li>
+            <a
+              href='https://www.linkedin.com/in/ashutoshbisoyi/'
+              target='_null'
+            >
+              <li>
+                <AiFillLinkedin className={styles.icon} />
+              </li>
+            </a>
+            <a href='https://github.com/ashutoshbisoyi' target='_null'>
+              <li>
+                <AiFillGithub className={styles.icon} />
+              </li>
+            </a>
+            <a href='mailto:ashutoshbisoyi205@gmail.com' target='_null'>
+              <li>
+                <AiFillMail className={styles.icon} />
+              </li>
+            </a>
+            <a href='https://www.instagram.com/ashutoshbisoyi/' target='_null'>
+              <li>
+                <AiFillInstagram className={styles.icon} />
+              </li>
+            </a>
           </ul>
         </div>
       </div>

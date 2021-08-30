@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../../styles/modules/Details.module.scss';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const Details = () => {
   return (
     <section className={styles.main}>
@@ -12,7 +12,9 @@ const Details = () => {
           product. Starting from the design till a optimum development and SEO.
         </p>
         <div className={styles.btnContainer}>
-          <button>View Work Sample</button>
+          <Link href='/worksample'>
+            <button>View Work Sample</button>
+          </Link>
         </div>
       </div>
       <div className={styles.figure}>
