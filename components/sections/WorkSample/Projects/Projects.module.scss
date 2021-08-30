@@ -1,13 +1,14 @@
 @import '../../../../styles/variables';
-.cardContainer {
-  @apply md:grid md:grid-cols-3 gap-4;
+
+.projects {
+  @apply block #{!important};
 }
 .topbar {
-  @apply flex justify-between items-center;
+  @apply flex flex-wrap justify-between items-center mb-5;
   .filters {
-    @apply flex mb-5;
+    @apply flex flex-wrap justify-center items-center md:justify-start mb-3;
     button {
-      @apply py-1 text-base mr-3 rounded bg-gray-400;
+      @apply py-1 text-base mr-3 rounded bg-gray-400 mb-1;
       filter: none;
       &.selected {
         background: $primary-color;
@@ -16,6 +17,9 @@
     }
   }
   .status {
-    @apply text-gray-500;
+    @apply text-gray-500 m-auto md:m-0 mt-2 md:mt-0;
   }
+}
+.cardContainer {
+  @apply md:grid md:grid-cols-3 gap-4;
 }

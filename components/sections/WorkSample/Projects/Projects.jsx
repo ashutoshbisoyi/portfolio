@@ -18,7 +18,7 @@ const Projects = () => {
   };
   console.log(selectedCategory);
   return (
-    <section className='block'>
+    <section className={styles.projects}>
       <div className={styles.topbar}>
         <ul className={styles.filters}>
           <li>
