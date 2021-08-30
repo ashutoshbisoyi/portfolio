@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import HeroSection from '../components/sections/Home/HeroSection/HeroSection';
+import HeroSection from '../components/sections/Home/herosection/HeroSection';
 import About from '../components/sections/Home/about/About';
 import Details from '../components/sections/Home/Details';
 import Statistics from '../components/sections/Home/statistics/Statistics';
